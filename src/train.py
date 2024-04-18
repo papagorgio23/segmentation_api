@@ -1,3 +1,4 @@
+import joblib
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
@@ -124,7 +125,7 @@ print(feature_import.sort_values(by="importance", ascending=False)[:20])
 
 # save model
 print("\nSaving Model...")
-model.save_model(f"./models/contribution_model_{datetime.now().date()}.json")
+joblib.dump(model, f"./models/contribution_model_{datetime.now().date()}.pkl")
 
 print("\nModel Saved!")
 print("\nTraining Complete!")
