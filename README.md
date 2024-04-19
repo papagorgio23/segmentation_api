@@ -1,6 +1,18 @@
 # Contribution Model API
 
 
+## Demo Model
+
+This is a demo model that predicts the contribution amount based on the following features:
+
+- First time donor (Yes/No)
+- Purpose of Donation (Memo Text Description)
+- Donor Occupation (Contributor Occupation)
+- Donor State (Contributor State)
+
+View the demo model [here](https://papagorgio23-segmentation-api-appapp-q4hb3q.streamlit.app/)
+
+
 
 ## Build Docker Image
 
@@ -77,7 +89,7 @@ Response:
 
 #### Predict_CSV
 
-Upload sample csv file `Data_Science_Technical_FEC_Filing_Sample.csv` and it will return the predicted contribution amount for each row.
+Upload sample csv file `Data_Science_Technical_FEC_Filing_Sample.csv` and it will return the predicted contribution amount for each row. You can download the results as a csv file.
 
 
 ![API Request](https://github.com/papagorgio23/segmentation_api/blob/main/img/predict_csv_api_1.png)
