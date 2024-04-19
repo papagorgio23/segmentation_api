@@ -45,7 +45,7 @@ predict: http://localhost/predict
 }
 ```
 
-![Alt text]([image link](https://github.com/papagorgio23/segmentation_api/blob/main/img/predict_api_1.png))
+![API Request](https://github.com/papagorgio23/segmentation_api/blob/main/img/predict_api_1.png)
 
 
 
