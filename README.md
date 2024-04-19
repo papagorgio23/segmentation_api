@@ -45,7 +45,7 @@ predict: http://localhost/predict
 }
 ```
 
-![API Request](https://github.com/papagorgio23/segmentation_api/blob/main/img/predict_api_1.png)
+![API Request](https://github.com/papagorgio23/segmentation_api/blob/main/img/predict_api_2.png)
 
 
 
@@ -72,6 +72,15 @@ Response:
 ```
 
 
+![API Request](https://github.com/papagorgio23/segmentation_api/blob/main/img/predict_api_4.png)
+
+
 #### Predict_CSV
 
 Upload sample csv file `Data_Science_Technical_FEC_Filing_Sample.csv` and it will return the predicted contribution amount for each row.
+
+
+![API Request](https://github.com/papagorgio23/segmentation_api/blob/main/img/predict_csv_api_1.png)
+
+
+![API Request](https://github.com/papagorgio23/segmentation_api/blob/main/img/predict_csv_api_2.png)
