@@ -60,7 +60,6 @@ st.write("***")
 st.subheader("Feature Importance")
 fig, ax = plt.subplots(figsize=(10, 40))
 xgb.plot_importance(model, ax=ax)
-# plt.show()
 st.pyplot(fig)
 
 
