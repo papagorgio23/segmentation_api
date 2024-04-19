@@ -132,7 +132,7 @@ SELECT
     ,SUM(CASE WHEN NOT instate THEN total END)                                AS outofstate
     ,SUM(CASE WHEN     instate THEN total END)::numeric / SUM(total)::numeric AS instate_pct
 FROM contributions
-GROUP BY cmte_nm
-HAVING cmte_nm = 'ACTBLUE';
+WHERE cmte_nm = 'ACTBLUE' -- changing HAVING to WHERE because it's filtering on a non-aggregated column. Better performance this way.
+GROUP BY cmte_nm;
 
 
