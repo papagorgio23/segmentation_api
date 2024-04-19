@@ -1,4 +1,6 @@
 import streamlit as st
+import matplotlib.pyplot as plt
+import xgboost as xgb
 
 
 from functions import (
@@ -52,6 +54,14 @@ st.subheader(f"${pred:.2f}")
 
 fig = plot_preds(prediction)
 st.plotly_chart(fig)
+st.write("***")
+
+# Feature Importance
+st.subheader("Feature Importance")
+fig, ax = plt.subplots(figsize=(10, 40))
+xgb.plot_importance(model, ax=ax)
+# plt.show()
+st.pyplot(fig)
 
 
 # Footer
